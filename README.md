@@ -29,7 +29,7 @@ There are no specific instructions to get a development environment running exce
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Check http://decem10.blogspot.kr/2017/09/developing-elliottbrowser-for-quandlcom_6.html
 
 ## Built With
 
