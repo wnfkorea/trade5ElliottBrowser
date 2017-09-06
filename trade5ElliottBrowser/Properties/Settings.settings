@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="trade5ElliottBrowser.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="tm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">trade5 ElliottBrowser</Value>
+    </Setting>
+    <Setting Name="contact" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">wnf@wave-n-fractals.com</Value>
+    </Setting>
+    <Setting Name="ev_int_limit" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="interests" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">wnf_filters.xml</Value>
+    </Setting>
+    <Setting Name="urls_ini" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">URLs_ini.xml</Value>
+    </Setting>
+    <Setting Name="keys_ini" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">APIKeys_ini.xml</Value>
+    </Setting>
+    <Setting Name="fltr_rspath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">fltr_rs_{0}.xml</Value>
+    </Setting>
+    <Setting Name="crawl_target" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CrawlerTarget</Value>
+    </Setting>
+    <Setting Name="html_wrap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WrapperHtml</Value>
+    </Setting>
+    <Setting Name="dbms" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="dbConn" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="logPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ini" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="qsource" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="crawler" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="imgPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="fltr_schedule" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="fltr_passive" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="fltr_wrap" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="task_feed_type" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="form_loc" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="czoom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="defaultPeriods" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="symbolsPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

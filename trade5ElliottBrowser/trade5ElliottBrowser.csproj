@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E766FB79-8789-4D08-B491-F6ECCB7F91D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>trade5ElliottBrowser</RootNamespace>
+    <AssemblyName>trade5ElliottBrowser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\MySQL\Connector NET 6.8.3\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>libs\Json60r5\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.88.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\SQLite.NET\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft SQL Server Compact Edition\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WnFElliottWave">
+      <HintPath>libs\WnFElliottWave\WnFElliottWave.dll</HintPath>
+    </Reference>
+    <Reference Include="WnFTechnicalIndicators">
+      <HintPath>libs\WnFElliottWave\WnFTechnicalIndicators.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CIniEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIniEdit.Designer.cs">
+      <DependentUpon>CIniEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CProductInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CProductInfo.Designer.cs">
+      <DependentUpon>CProductInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuandlChart.cs" />
+    <Compile Include="WnFCandles.cs" />
+    <Compile Include="WnFDbConnectionWrapper.cs" />
+    <Compile Include="WnFElliottBrowser.cs" />
+    <Compile Include="CChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CChartPanel.Designer.cs">
+      <DependentUpon>CChartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSymbolsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CSymbolsPanel.Designer.cs">
+      <DependentUpon>CSymbolsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IWnFOpenAPI.cs" />
+    <Compile Include="QuandlAPI.cs" />
+    <Compile Include="trade5ElliottBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trade5ElliottBrowser.Designer.cs">
+      <DependentUpon>trade5ElliottBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CChartPanel.resx">
+      <DependentUpon>CChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIniEdit.resx">
+      <DependentUpon>CIniEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CProductInfo.resx">
+      <DependentUpon>CProductInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSymbolsPanel.resx">
+      <DependentUpon>CSymbolsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="trade5ElliottBrowser.resx">
+      <DependentUpon>trade5ElliottBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112_RightArrowShort_Grey_16x16_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112_RightArrowShort_Green_16x16_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_scheduleHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_scheduleHSWeek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESPNfr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPictureHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonthlyViewHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PFTW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulerHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URLs_ini.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wnf25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tr5-10.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trade5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbnails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mag2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESPN.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

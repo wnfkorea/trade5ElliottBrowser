@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IniItemCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <IniItem>
+      <Key>DatabaseDefault</Key>
+      <Value>WIKI</Value>
+    </IniItem>
+    <IniItem>
+      <Key>DatasetDefault</Key>
+      <Value>FB</Value>
+    </IniItem>
+    <IniItem>
+      <Key>Symbols</Key>
+      <Value>https://www.quandl.com/api/v3/databases/{0}/codes.json</Value>
+    </IniItem>
+    <IniItem>
+      <Key>SymbolsOfInterest</Key>
+      <Value></Value>
+    </IniItem>
+    <IniItem>
+      <Key>Metadata</Key>
+      <Value>https://www.quandl.com/api/v3/datasets/{0}/{1}/metadata.json</Value>
+    </IniItem>
+	<IniItem>
+	  <Key>Candles</Key>
+	  <Value>https://www.quandl.com/api/v3/datasets/{0}/{1}/data.json?collapse={2}&amp;start_date={3}&amp;end_date={4}&amp;rows={5}</Value>
+	</IniItem>
+	<IniItem>
+	  <Key>CrawlerDefault</Key>
+	  <Value>https://www.zacks.com/stock/quote/{0}/detailed-estimates</Value>
+	</IniItem>
+	<IniItem>
+	  <Key>CrawlerTarget</Key>
+	  <Value>detailed_estimate_full_body</Value>
+	</IniItem>
+	<IniItem>
+	  <Key>CrawlerTarget2</Key>
+	  <Value>premium_research</Value>
+	</IniItem>
+	<IniItem>
+	  <Key>WrapperHtml</Key>
+	  <Value>wrapper2.html</Value>
+	</IniItem>
+  </Items>
+</IniItemCollection>
